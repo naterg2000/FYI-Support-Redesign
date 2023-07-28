@@ -1,0 +1,193 @@
+/* css page */
+
+/*
+Color Palette
+Background: 
+Cards/Banners: 
+Text: 
+Button background:
+*/
+
+body {
+	/*background-color: #232426;*/
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+p {
+	/*color: #959597;*/
+}
+
+
+/* this is the page header with the logo and sign in button */
+.page-header {
+	width: 100%;
+	height: 100px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border-color: #012;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+.page-header-item {
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	justify-content: center;
+}
+
+#spacer {
+	height: 10px;
+	width: 50px;
+	background-color: "blue";
+}
+
+#home-logo {
+	height: 100px;
+	width: 100px;
+}
+
+
+/* home page body section */
+.body-section {
+	width: 100%;
+	height: 700px;
+
+	border-color: #021;
+	border-style: solid;
+	border-width: 2px;
+}
+
+
+/* serach bar section */
+.search-bar-container-main {
+	height: 80px;
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+	border-color: #034;
+	border-style: dashed;
+	border-width: 2px;
+}
+
+.search-bar-container-vertical {
+	height: 100%;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+#home-body-search-spacer {
+	height: 30px;
+	margin: auto;
+
+	border-color: #087;
+	border-style: dashed;
+	border-width: 1px;
+}
+
+.search-bar {
+	border-color: #38383A;
+	width: 400px;
+	height: 48px;
+	display: flex;
+	flex-direction: row;
+
+	border-color: #38383A;
+	border-style: solid;
+	border-width: 2px;
+	border-radius: 30px;
+}
+
+#search-bar-main-icon {
+	display: flex;
+}
+
+.search-placeholder-text {
+	color: #38383A;
+}
+
+.search-icon-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 0px 8px 0px 12px; /* top right bottom left */
+	color: #38383A;
+}
+
+
+/* category button section */
+.category-button-section {
+	height: 500px;
+	width: 100%;
+
+	border-color: #123;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.category-button-container {
+	height: 80%;
+	width: 80%;
+
+	/* center the div horizontally and vertically */
+	position: relative;
+ 	left: 50%;
+ 	top: 50%;
+ 	-webkit-transform: translate(-50%, -50%);
+ 	transform: translate(-50%, -50%);
+
+	border-color: #456;
+	border-style: solid;
+	border-width: 1px;
+}
+
+.category-button-list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	column-count: 4;
+	flex-wrap: true;
+
+	border-color: #098;
+	border-style: dotted;
+	border-width: 5px;
+}
+
+.category-button {
+	height: 250px;
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	
+
+	border-color: #123;
+	border-style: dashed;
+	border-width: 3px;
+}
+
+.category-button-horizontal {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.fa-robot {
+	height: 30%;
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+
+	border-color: #937;
+	border-style: solid;
+	border-width: 1px;
+}
+
