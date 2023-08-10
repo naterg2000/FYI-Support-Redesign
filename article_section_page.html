@@ -6,38 +6,52 @@
 	<link rel="stylesheet" media="screen and (max-device-width: 480px)" href="mobile_style.css" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<script src="articlePageScript.js"></script>
 </head>
 <body>
 	<p>This is an article section page</p>
 
-	<div class="article-section-container">
-		<ul class="article-section-list">
-			<ul class="section-articles-list">FAQs	<!-- container for articles under a section -->
-				<li class="article-button">
-					<a href="">Genreal FAQs
-					<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</li>
+	<div class="article-section-horizontal-container">	<!-- this will align the article options and detail view horizontally -->
 
-				<li class="article-button">
-					<a href="">Pricing
-					<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</li>
+		<div class="article-section-container">
+			<ul class="article-section-list">
+				<ul class="section-articles-list">FAQs	<!-- container for articles under a section -->
+					<li class="article-button">
+						<div class="article-button-content-container">
+							<button onclick="showDiv()" type="button" class="article-button-object">General FAQs</button>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</li>
 
-				<li class="article-button">
-					<a href="">Pasting from Other Apps
-					<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</li>
+					<li class="article-button">
+						<div class="article-button-content-container">
+							<button onclick="showDiv()" type="button" class="article-button-object">Pricing</button>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</li>
 
-				<li class="article-button">
-					<a href="">Genreal FAQs
-					<i class="fa-solid fa-arrow-right"></i>
-					</a>
-				</li>
-			</ul>
-		</ul>	<!-- end article list container -->
-	</div>	<!-- end article section container -->
+					<li class="article-button" onclick="showDiv()">
+						<div class="article-button-content-container">
+							<button onclick="showDiv()" type="button" class="article-button-object">How to add a Contact</button>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</li>
+
+					<li class="article-button">
+						<div class="article-button-content-container">
+							<button onclick="showDiv()" type="button" class="article-button-object">Is FYI Safe?</button>
+							<i class="fa-solid fa-arrow-right"></i>
+						</div>
+					</li>
+				</ul>
+			</ul>	<!-- end article list container -->
+		</div>	<!-- end article section container -->
+
+		<div id="article-detail-container">	<!-- this will display the article's contents -->
+			<button onclick="closeArticleDetailSection()" class="close-article-detail-section" type="button">
+				<i class="fa-solid fa-x"></i>
+			</button>
+		</div>	<!-- end article detail container -->
+	</div> <!-- end article section horizontal container -->
 </body>
 </html>

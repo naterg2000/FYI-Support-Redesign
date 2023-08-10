@@ -1,5 +1,7 @@
 body {
 	background-color: #232426;
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+	font-size: 15pt;
 }
 
 p {
@@ -80,6 +82,13 @@ p {
 
 
 /* article section page */
+.article-section-horizontal-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+
 .article-section-list {
 	color: #959597;
 }
@@ -91,26 +100,69 @@ p {
 	background-color: #3f3f42;
 	display: flex;
 	flex-direction: row;
+	justify-content: space-between;
 }
 
-.article-button a {
-	color: #959597;
+.article-button-content-container {
+	height: 100%;
+	width: 100%;
+
 	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 7% 0px 7%;
+}
+
+.article-button button {
+
+	/* reset default button style */
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+
 	height: inherit;
 	width: inherit;
-	align-items: center;
-	justify-content: center;
+	
 	text-decoration: none;
-	justify-content: space-between;
-	padding: 0px 7% 0px 7%;
-
-	/*
-	border: red;
-	border-style: solid;
-	*/
+	outline: none;
+	text-align: left;
 }
 
 
 .article-button .fa-arrow-right {
+	color: #959597;
+}
+
+#welcomeDiv {
+	height: 200px;
+	width: 200px;
+	background-color: red;
+	display: none;
+}
+
+
+
+/* article detail section */
+#article-detail-container {
+	height: 800px;
+	width: 800px;
+	display: none;
+
+	border: red;
+	border-style: solid;
+}
+
+.close-article-detail-section {
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+.fa-x {
 	color: #959597;
 }
